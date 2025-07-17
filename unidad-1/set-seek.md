@@ -50,3 +50,8 @@ De hecho también le veo potencial en sentido de innovador y retador, porque log
 ### Nosotros estamos definiendo en TIEMPO REAL una nueva forma de expresión, una nueva forma de interactuar de manera colectiva. Estamos diseñando nuevas maneras de contar historias e interactuar con ellas. ¿Cómo te ves profesionalmente en este escenario?
 
 Me visualizo como toda una creativa e innovadora. Me emociona y me puedo ver a futuro retandome y divirtiendome con estos escenarios y en este campo. Tener que buscar maneras creativas para que en tiempo real la audiencia viva una experiencia inmersiva es 0 monotono y como futura profesional me logro visualizar en eso. 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+> ##  ACTIVIDAD 3
+

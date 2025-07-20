@@ -157,7 +157,11 @@ Este experimento podría servirme porque muestra cómo los inputs (como el mouse
 
 > ##  ACTIVIDAD 4
 
-1. Lo primero que hice fue poner las bases y asegurarme de que funcionaran antes de continuar, que es algo que estoy intentando mejorar. Un círculo, un cuadrado y un triángulo.
+### Link Sketch final: [https://editor.p5js.org/Lula402/full/Cd1siKhXs](https://editor.p5js.org/Lula402/full/Cd1siKhXs)
+
+### Proceso
+
+1. Lo primero que hice fue ir a las references que tiene p5.js, poner las bases y asegurarme de que funcionaran antes de continuar, que es algo que estoy intentando mejorar. Un círculo, un cuadrado y un triángulo.
 
 ```js
 let actRandomSeed = 0;
@@ -185,9 +189,25 @@ function draw() {
 ```
 
 2. Logré randomizar color, tamaño, posición y que depende de como se moviera el mouse se pintaba una figura diferente, pero el problemita es que se veía asi de feo:
-
+   
+<p align=center>
 <img width="281" height="265" alt="image" src="https://github.com/user-attachments/assets/53a5d8c8-2755-419d-9129-8d5e8651e26c" />
+</p>
 
 Entonces obvio lo quise arreglar.
 
-3. 
+3. Le añadí fill que para que se viera más lindo y eso fue peor, porque los cuadrados son muy grande y pintan todo el canvas:
+
+<p align=center>
+<img width="294" height="273" alt="image" src="https://github.com/user-attachments/assets/e1772cb3-2ce8-484d-8bd6-4dd4915645db" />
+</p>
+
+4. Luego le bajé a la opacidad (alpha), o mejor dicho lo añadí porque no lo tenia y tambien limité el tamaño de las figuras para que no llenaran el canvas tan rápido. Además puse la función de que al soltarse el espacio del teclado se limpiara el canvas.
+
+<p align=center>
+<img width="295" height="273" alt="image" src="https://github.com/user-attachments/assets/fd4510e0-190f-4e60-99ad-721ebdebab0c" />
+</p>
+
+5. Quedé ya a gusto con el resultado, porque no se veia saturado, el user puede jugar con el sketch y si podrían salir cositas que se vean bien.
+
+### Link resultado: https://youtube.com/shorts/jVwaFYc1geE?feature=share   

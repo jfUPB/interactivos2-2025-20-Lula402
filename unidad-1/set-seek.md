@@ -135,6 +135,7 @@ function keyReleased() {
 ```
 
 ### Parámetro que escogí: 
+circleColor, para modificarlo con el input de MouseY
 
 ### ¿Como creo que podria servirme para el proyecto del curso?
-
+ esto te muestra cómo los valores de entrada (como el mouse) pueden controlar parámetros visuales. Esto es esencial en interactividad creativa.

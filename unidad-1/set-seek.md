@@ -57,7 +57,8 @@ Me visualizo como toda una creativa e innovadora. Me emociona y me puedo ver a f
 
 ### Link al ejemplo analizado: http://www.generative-gestaltung.de/2/sketches/?01_P/P_2_1_2_01
 
-### Link a mi versión modificada: 
+### Link a mi versión modificada: [https://editor.p5js.org/Lula402/full/fpiFwE6N_  ]
+
 
 ### Análisis de como funciona:
 
@@ -135,7 +136,19 @@ function keyReleased() {
 ```
 
 ### Parámetro que escogí: 
-circleColor, para modificarlo con el input de MouseY
+circleColor, para modificarlo con el input de MouseY.
+
+En el sketch original, el color de los circulos se mantenía. La modificación que realicé fue añadir color a los circulos, pero siendo cambiado en tiempo real gracias al input de la posición del mouse en Y. Ahora el movimiento del mouse en Y no solo va a cambiar el grosor de la stroke de los circulos, sino que el color va a ser más azul entre más arriba este el mouse y más verde entre más abajo esté el mouse.
+
+Como circleColor recibía un R,G,B entonces tuve que transformar los valores de la posición del mouse a un valor entre (0 , 255), para ello usé ***map***. 
+
+```js
+let G = map(mouseY, 0, height, 0, 255)
+```
+
+El valor a mapear era mouseY, el valor min era 0 y el max era el height del canvas. Eso se iba a traducir a un rango que si es min era 0 y si era max es 255, (tambien se podian valores intermedios). Con el azul hice lo mismo pero viceversa y el rojo lo dejé en 0 para que se viera más el cambio entre verde y azul. 
+
+Si el mouse estaba lo más abajo posible se veia verde (G= 255, B=0) y a medida que el mouse subiera se veia azul (G=0, B=255)
 
 ### ¿Como creo que podria servirme para el proyecto del curso?
- esto te muestra cómo los valores de entrada (como el mouse) pueden controlar parámetros visuales. Esto es esencial en interactividad creativa.
+Este experimento podría servirme porque muestra cómo los inputs (como el mouse) pueden controlar parámetros visuales, como en este caso el color. Esto es esencial en interactividad y diseño generativo. Para el proyecto del curso voy a necesitar interacciones en tiempo real y el mouse es una herramienta que permite eso sin complicarse mucho.

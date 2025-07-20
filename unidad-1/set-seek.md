@@ -67,6 +67,65 @@ Me visualizo como toda una creativa e innovadora. Me emociona y me puedo ver a f
 <img src="https://github.com/user-attachments/assets/780adbfd-b82c-426b-9790-fcf6cbf3d2cf" width="400" height="400">
 </p>
 
+***Analizando el código:*** 
+
+1. noto que hay varibales para el Tile count que es el grid en el que están organizados los circulos y que hay una random seed que probabemente se va a usar para aleatorizar la posición de los circulos al desordenarse.
+   
+```js
+var tileCount = 20;
+var actRandomSeed = 0;
+
+var circleAlpha = 130;
+var circleColor;
+
+function setup() {
+  createCanvas(600, 600);
+  noFill();
+  circleColor = color(0, 0, 0, circleAlpha);
+}
+```
+
+2.  
+```js
+function draw() {
+  translate(width / tileCount / 2, height / tileCount / 2);
+
+  background(255);
+
+  randomSeed(actRandomSeed);
+
+  stroke(circleColor);
+  strokeWeight(mouseY / 60);
+
+  for (var gridY = 0; gridY < tileCount; gridY++) {
+    for (var gridX = 0; gridX < tileCount; gridX++) {
+
+      var posX = width / tileCount * gridX;
+      var posY = height / tileCount * gridY;
+
+      var shiftX = random(-mouseX, mouseX) / 20;
+      var shiftY = random(-mouseX, mouseX) / 20;
+
+      ellipse(posX + shiftX, posY + shiftY, mouseY / 15, mouseY / 15);
+    }
+  }
+}
+```
+
+3.  
+```js
+function mousePressed() {
+  actRandomSeed = random(100000);
+}
+```
+
+4. 
+```js
+function keyReleased() {
+  if (key == 's' || key == 'S') saveCanvas(gd.timestamp(), 'png');
+}
+```
+
 ### Parámetro que escogí:
 
 ### ¿Como creo que podria servirme para el proyecto del curso?

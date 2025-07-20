@@ -85,7 +85,14 @@ function setup() {
 }
 ```
 
-2.  
+2. Cada iteración del draw se recalcula el origen del sis de coordenadas, para que al recorrer el canvas con el ciclo el origen coincida con el origen de cada circulo al ser pintado. Entonces agarro el ancho del canvas, lo divido por el tilecount que es 20 y eso me da el ancho de cada Tile, pero necesito saber su centro entonces lo divido por 2 y ahora si puedo centrar el circulo al pintarlo.
+
+El canvas se limpia en cada iteración. La random seed usa una actRandomSeed que es random pero ni tan random, porque mientras se mantenga la misma seed, es este caso 0, las opciones de aleatoriedad van a ser las mismas.
+
+Se asigna el color del trazo del circulo y también su grosor, ahí se usa el input de la posición en Y del mouse, porque a medida que este valor cambia, tambien cambiará el grosor.
+
+Hay dos ciclos ***for*** para recorrer el canvas y pintar en cada draw, entonces las variables ***posx*** y ***posy*** son el centro de cada uno de esos circulos. Acá entra el input de la posición del mouse en X, porque se usa un random entre - MouseX hasta MouseX para aleatorizar el movimiento de los circulos
+
 ```js
 function draw() {
   translate(width / tileCount / 2, height / tileCount / 2);

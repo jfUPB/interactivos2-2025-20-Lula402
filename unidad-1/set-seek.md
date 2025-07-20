@@ -55,3 +55,19 @@ Me visualizo como toda una creativa e innovadora. Me emociona y me puedo ver a f
 
 > ##  ACTIVIDAD 3
 
+### Link al ejemplo analizado: http://www.generative-gestaltung.de/2/sketches/?01_P/P_2_1_2_01
+
+### Link a mi versión modificada: 
+
+### Análisis de como funciona:
+
+***Hipotesis:*** A simple vista y explorando, creo que este ejemplo funciona con la posición del mouse. Entonces lo que noto es que si el Mouse:
+
+<p align=center> 
+<img src="https://github.com/user-attachments/assets/780adbfd-b82c-426b-9790-fcf6cbf3d2cf" width="400" height="400">
+</p>
+
+### Parámetro que escogí:
+
+### ¿Como creo que podria servirme para el proyecto del curso?
+

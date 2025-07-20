@@ -152,3 +152,42 @@ Si el mouse estaba lo más abajo posible se veia verde (G= 255, B=0) y a medida 
 
 ### ¿Como creo que podria servirme para el proyecto del curso?
 Este experimento podría servirme porque muestra cómo los inputs (como el mouse) pueden controlar parámetros visuales, como en este caso el color. Esto es esencial en interactividad y diseño generativo. Para el proyecto del curso voy a necesitar interacciones en tiempo real y el mouse es una herramienta que permite eso sin complicarse mucho.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+> ##  ACTIVIDAD 4
+
+1. Lo primero que hice fue poner las bases y asegurarme de que funcionaran antes de continuar, que es algo que estoy intentando mejorar. Un círculo, un cuadrado y un triángulo.
+
+```js
+let actRandomSeed = 0;
+let x= 5;
+let y= 5;
+let d= 5;
+let x1 =50;
+let y1 =50;
+let x2 =20;
+let y2 =20;
+let x3 =10;
+let y3 =50;
+
+function setup() {
+  createCanvas(400, 400);
+  noFill();
+}
+
+function draw() {
+  background(255);
+  circle(x, y, d)
+  square(30, 20, 55);
+  triangle(x1, y1, x2, y2, x3, y3)
+}
+```
+
+2. Logré randomizar color, tamaño, posición y que depende de como se moviera el mouse se pintaba una figura diferente, pero el problemita es que se veía asi de feo:
+
+<img width="281" height="265" alt="image" src="https://github.com/user-attachments/assets/53a5d8c8-2755-419d-9129-8d5e8651e26c" />
+
+Entonces obvio lo quise arreglar.
+
+3. 

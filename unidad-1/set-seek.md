@@ -86,12 +86,12 @@ function setup() {
 ```
 
 2. Cada iteración del draw se recalcula el origen del sis de coordenadas, para que al recorrer el canvas con el ciclo el origen coincida con el origen de cada circulo al ser pintado. Entonces agarro el ancho del canvas, lo divido por el tilecount que es 20 y eso me da el ancho de cada Tile, pero necesito saber su centro entonces lo divido por 2 y ahora si puedo centrar el circulo al pintarlo.
+   
+   El canvas se limpia en cada iteración. La random seed usa una actRandomSeed que es random pero ni tan random, porque mientras se mantenga la misma seed, es este caso 0, las opciones de aleatoriedad van a ser las mismas.
 
-El canvas se limpia en cada iteración. La random seed usa una actRandomSeed que es random pero ni tan random, porque mientras se mantenga la misma seed, es este caso 0, las opciones de aleatoriedad van a ser las mismas.
+   Se asigna el color del trazo del circulo y también su grosor, ahí se usa el input de la posición en Y del mouse, porque a medida que este valor cambia, tambien cambiará el grosor.
 
-Se asigna el color del trazo del circulo y también su grosor, ahí se usa el input de la posición en Y del mouse, porque a medida que este valor cambia, tambien cambiará el grosor.
-
-Hay dos ciclos ***for*** para recorrer el canvas y pintar en cada draw, entonces las variables ***posx*** y ***posy*** son el centro de cada uno de esos circulos. Acá entra el input de la posición del mouse en X, porque se usa un random entre - MouseX hasta MouseX para aleatorizar el movimiento de los circulos
+   Hay dos ciclos ***for*** para recorrer el canvas y pintar en cada draw, entonces las variables ***posx*** y ***posy*** son el centro de cada uno de esos circulos. Acá entra el input de la posición del mouse en X, porque se usa un random entre ***- MouseX*** hasta ***MouseX*** para aleatorizar el movimiento de los circulos, si el mouse no se mueve en X no se mueven los circulos. Luego con posx, posy, shiftx, shifty se dibuja el circulo.
 
 ```js
 function draw() {
@@ -119,21 +119,22 @@ function draw() {
 }
 ```
 
-3.  
+3.  Cuando se presiona el click izquierdo del mouse la actRandomSeed se randomiza tomando un valor aleatorio de 0 a 100k. Mientras no se de click la random seed se mantenia en 0 e iba a seguir aleatorio con lo mismo, pero si quiero que se randomice diferente entonces le doy click y asi tengo como un nuevo set de randomizaciones.
+   
 ```js
 function mousePressed() {
   actRandomSeed = random(100000);
 }
 ```
 
-4. 
+4.  Si presiono la tecla S se toma un Screenshot del canvass y se guarda como png.
 ```js
 function keyReleased() {
   if (key == 's' || key == 'S') saveCanvas(gd.timestamp(), 'png');
 }
 ```
 
-### Parámetro que escogí:
+### Parámetro que escogí: 
 
 ### ¿Como creo que podria servirme para el proyecto del curso?
 

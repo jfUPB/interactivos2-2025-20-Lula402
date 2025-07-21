@@ -5,6 +5,8 @@
 ### Link ejemplo escogido: https://editor.p5js.org/Lula402/full/HJ2Wx9qq61N
 ### Link Sketch modificado: 
 
+### <p align=center> Deconstrucción/reconstrucción </p>
+
 ### <p align=center> Select </p>
 Link ejemplo escogido: https://editor.p5js.org/Lula402/full/HJ2Wx9qq61N
 

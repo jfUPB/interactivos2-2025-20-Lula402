@@ -16,6 +16,25 @@ Link ejemplo escogido: https://editor.p5js.org/Lula402/full/HJ2Wx9qq61N
 
 - ***Formas:*** son curvas. No hay letras.
 - ***Funcionamiento:*** Las curvas se dibujan por medio de una lineas que parecen funcionar como si fuera un compás. Son 3 lineas unidas por dos puntos, las cuales se van moviendo y cruzandose entre si mientras van pintando las curvas con el color correspondiente.
+- ***Interactividad:***
+  
+  Arrow arriba: crecen las lineas, entonces ocupa más espacio del canvas.
+  
+  Arrow abajo: decrecen las lineas entonces la figura se pinta más pequeña y con más curvas.
+  
+  Arrow derecha: aumenta la cantidad de puntos que dibujan.
+  
+  Arrow izquierda: disminuye la cantidad de puntos que dibujan.
+  
+  1: esconde las lineas y los puntos que dibujan.
+  
+  2: esconde la figura que se está dibujando.
+  
+  +: dibuja más rápido, pero tambien hace que se vea menos redonda la figura, sino que se ve más puntuda.
+  
+  -: dibuja más lento.
+  
+  delete: se limpia el canvas.
 - ***Colores:*** verde limón, verde menta, azul, morado y rosado.
 - ***grids:*** al parecer hay una simetría respecto al centro, porque se dibuja lo mismo en los tres lados, aunque no se dibuje a la misma vez.
 - ***rhythm:*** las curvas verdes se dibujan a la misma velocidad y la curva morada, rosada y azul se dibujan a la misma velocidad entre sí, pero más rápido que las verdes.

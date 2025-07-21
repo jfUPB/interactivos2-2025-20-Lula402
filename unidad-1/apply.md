@@ -32,7 +32,10 @@ Link ejemplo escogido: https://editor.p5js.org/Lula402/full/HJ2Wx9qq61N
   
   2: esconde la figura que se está dibujando.
   
-  +: dibuja más rápido, pero tambien hace que se vea menos redonda la figura, sino que se ve más puntuda.
+  +: dibuja más rápido, pero tambien hace que se vea menos redonda la figura, sino que se ve más puntuda asi:
+  
+  <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/17c17be7-4592-4fab-bdba-e207cb0eefda" />
+
   
   -: dibuja más lento.
   

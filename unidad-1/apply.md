@@ -48,6 +48,17 @@ Link ejemplo escogido: https://editor.p5js.org/Lula402/full/HJ2Wx9qq61N
 
 ### <p align=center> Analyze </p>
 
+Los componentes que identifico a primera vista al interactuar con el ejemplo son:
+
+- Speed
+- Lectura de algunas teclas como input
+- Stroke
+- Una función draw que a diferencia de otros ejercicios que he hecho no limpia el background del canvas en cada frame.
+- Sistema de coordenadas: deben haber posisicones para poder centrar las lineas que dibujan.
+- Deben haber ángulos.
+- Funciones para la acción de cada tecla.
+  
+
 ### <p align=center> Convert </p>
 
 ### <p align=center> Explore </p>

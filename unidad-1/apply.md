@@ -146,7 +146,7 @@ let showPendulumPath = true;
 
 3. un setup si lo reconozco desde antes, acá se prepara un canvas blanco de 600px x 600px. Se determina que las figuras que se vayan a pintar van a ser sin fill y que el trazo va a tener un grosor de 1px. Luego tambien se establece que el center va a ser en la mitad del canvas y se crea un vector con eso. Se llama a la función startDrawing que me imagino que es para dejar todo listo para la 1era iteración.
 
-```
+```js
 function setup() {
   createCanvas(600, 600);
   background(255);
@@ -169,7 +169,7 @@ El angle se hace 0 para volverlo a inicializar.
 
 En Speed se calcula la velocidad a la que se pinta todo el dibujo. La velocidad va a depender de que tantos joints hayan y de cual sea la speedRelation. Si los Joints aumentan entonce 1.75 se va a elevar a una cantidad más grande, y por ende va a quedar un denominador más grande. Lo mismo para con la speedRelation. La velocidad se reduce a medida que aumentan los joints o la speedRelation.
 
-```
+```js
 function startDrawing() {
   pendulumPath = [];
   // new empty array for each joint
@@ -184,9 +184,15 @@ function startDrawing() {
 
 5. Yo pensaba que el background no se limipaba, pero resulta que si en cada frame. El angulo va incrementando pues para poder que se mueva.
 
-Cada frame se actualiza la posición de cada joint, si ya recorrió los 360°
+Cada frame se actualiza la posición de cada joint, si ya recorrió los 360° para de calcular porque ya no entra al if. Dentro del ciclo for se calcula la posición de cada joint, el angulo segun el joint e intercaladamente giran para sentidos contrarios. Se calcula la longitud a la que va a estar el siguiente joint. 
 
-```
+Se dibuja una elipse, que se ve como un puntico en la posición en x & y del joint, luego se pinta una linea conectando la posicion inicial (x,y) y la next (x,y).
+
+Se almacena la posición del nextPos para poder saber cual va a ser el trayecto y luego pos se actualiza = nextPos para poder avanazar.
+
+Ahora si lo que realmente pinta la figura. pendulumPath es un aray que se recorre con un for. Con begin y end shape se recorre todo el path y se unen los vertices con una linea usando vertex. Tambipen se usa map para convertir el # del joint al color que le correspondería. 
+
+```js
 function draw() {
   background(0, 0, 100);
 
@@ -236,10 +242,7 @@ function draw() {
 }
 ```
 
-
-```
-
-```
+6. Es la función de keyPressed, pero es bastante intuitiva entonces si la entendí.
 
 ### <p align=center> Explore </p>
 

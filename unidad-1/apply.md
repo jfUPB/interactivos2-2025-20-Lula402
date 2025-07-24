@@ -2,13 +2,14 @@
 
 ## 🛠 Fase: Apply
 
-### Link ejemplo escogido: https://editor.p5js.org/Lula402/full/HJ2Wx9qq61N
+### Link ejemplo escogido: https://editor.p5js.org/generative-design/full/HJ2Wx9qq61N
+
 ### Link Sketch modificado: 
 
 ### <p align=center> Deconstrucción/reconstrucción </p>
 
 ### <p align=center> Select </p>
-Link ejemplo escogido: https://editor.p5js.org/Lula402/full/HJ2Wx9qq61N
+ Link ejemplo escogido: https://editor.p5js.org/generative-design/full/HJ2Wx9qq61N
 
 ### <p align=center> Describe </p>
 
@@ -50,16 +51,72 @@ Link ejemplo escogido: https://editor.p5js.org/Lula402/full/HJ2Wx9qq61N
 
 Los componentes que identifico a primera vista al interactuar con el ejemplo son:
 
-- Speed
+- Speed, para determinar la velocidad a la que se pintan.
 - Lectura de algunas teclas como input
-- Stroke
+- Stroke, para dibujar las curvas.
 - Una función draw que a diferencia de otros ejercicios que he hecho no limpia el background del canvas en cada frame.
 - Sistema de coordenadas: deben haber posisicones para poder centrar las lineas que dibujan.
-- Deben haber ángulos.
+- Deben haber ángulos, junto con la speed porque las lineas que dibujan rotan y se transladan..
 - Funciones para la acción de cada tecla.
+- Función set up, para poder determinar las cosas bases del programa, como el canvas, color del canvas, colores o variables que no van a cambiar y se van a inicializar en cada frame.
   
-
 ### <p align=center> Convert </p>
+
+1.
+
+```
+function setup() {
+  createCanvas(600, 600);
+  background(255);
+  
+}
+
+function draw() {
+ 
+}
+
+function keyPressed (){
+  
+  if (key == DELETE ){
+    
+  }
+  
+  if (key == '+'){
+      
+      }
+  
+  if (key == '-'){
+      
+      }
+  
+  if (key == UP_ARROW){
+      
+      }
+  
+  if (key == DOWN_ARROW){
+      
+      }
+  
+  if (key == LEFT_ARROW){
+      
+      }
+  
+   if (key == RIGHT_ARROW){
+      
+      }
+   
+   if (key == '1'){
+     
+   }
+  
+   if (key == '2'){
+     
+   }
+  
+   if (key == 's' || key == 'S') saveCanvas(gd.timestamp(), 'png');
+}
+```
+
 
 ### <p align=center> Explore </p>
 

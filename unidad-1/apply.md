@@ -159,18 +159,15 @@ function setup() {
 
 4. Se define un array pendulumPath que ya se había declarado arriba. Luego ese pendulum path se recorre con un for y el tope son la cantidad de Joints, osea 5. En cada iteración del for se hace un push, osea que se añade un array [] dentro del pendulumPath. Va a quedar un array, y dentro de cada uno de los 5 espacios de ese array, van a guardarse otros 5 arrays correspondientemente.
 
-
-
 <p align=center>  
 
 <img src="https://github.com/user-attachments/assets/5d430c33-f06d-481a-ba04-52fb94f2a3d0" width="400" height="300">
 
 </p>
 
-
 El angle se hace 0 para volverlo a inicializar.
 
-Speed 
+En Speed se calcula la velocidad a la que se pinta todo el dibujo. La velocidad va a depender de que tantos joints hayan y de cual sea la speedRelation. Si los Joints aumentan entonce 1.75 se va a elevar a una cantidad más grande, y por ende va a quedar un denominador más grande. Lo mismo para con la speedRelation. La velocidad se reduce a medida que aumentan los joints o la speedRelation.
 
 ```
 function startDrawing() {
@@ -182,6 +179,60 @@ function startDrawing() {
 
   angle = 0;
   speed = 8 / pow(1.75, joints - 1) / pow(2, speedRelation - 1);
+}
+```
+
+5. Yo pensaba que el background no se limipaba, pero resulta que si en cada frame. El angulo va incrementando pues para poder que se mueva.
+
+Cada frame se actualiza la posición de cada joint, si ya recorrió los 360°
+
+```
+function draw() {
+  background(0, 0, 100);
+
+  angle += speed;
+
+  // each frame, create new positions for each joint
+  if (angle <= maxAngle + speed) {
+    // start at the center position
+    let pos = center.copy();
+
+    for (let i = 0; i < joints; i++) {
+      let a = angle * pow(speedRelation, i);
+      if (i % 2 == 1) a = -a;
+      let nextPos = p5.Vector.fromAngle(radians(a));
+      nextPos.setMag(((joints - i) / joints) * lineLength);
+      nextPos.add(pos);
+
+      if (showPendulum) {
+        noStroke();
+        fill(0, 10);
+        ellipse(pos.x, pos.y, 4, 4);
+        noFill();
+        stroke(0, 10);
+        line(pos.x, pos.y, nextPos.x, nextPos.y);
+      }
+
+      pendulumPath[i].push(nextPos);
+      pos = nextPos;
+    }
+  }
+
+  // draw the path for each joint
+  if (showPendulumPath) {
+    strokeWeight(1.6);
+    for (let i = 0; i < pendulumPath.length; i++) {
+      let path = pendulumPath[i];
+
+      beginShape();
+      let hue = map(i, 0, joints, 120, 360);
+      stroke(hue, 80, 60, 50);
+      for (let j = 0; j < path.length; j++) {
+        vertex(path[j].x, path[j].y);
+      }
+      endShape();
+    }
+  }
 }
 ```
 

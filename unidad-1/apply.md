@@ -64,7 +64,7 @@ Los componentes que identifico a primera vista al interactuar con el ejemplo son
 
 1.
 
-```
+```js
 function setup() {
   createCanvas(600, 600);
   background(255);
@@ -116,7 +116,34 @@ function keyPressed (){
    if (key == 's' || key == 'S') saveCanvas(gd.timestamp(), 'png');
 }
 ```
+2. A partir de acá me sentí muy perdida porque la verdad no sabía como funcionaba nada, entonces me tuve que apoyar del código original. Voy a entender que hace, para poder que en el futuro pueda hacer este paso de ***convert*** sin atascarme tan rápido:
 
+En esta parte se declaran todas las variables globales que se van a necesitar. Por el momento no se que hacen: shape, joints, pendulumPath. 
+
+Respecto a las siguientes si tengo mi suposición de que almacenan: 
+- lineLength: la  longitud de las lineas que dibujan, porque esa se puede modificar con las arrows up and down.
+- speedRelation: la relación de velocidad entre las strokes de colores, porque es diferente.
+- center: Lo que mencioné arriba de que debe haber un sistema coordenado para centrar los trazos.
+- angle: el ángulo en el que van las líneas que dibujan, me imagino que este valor se va actualizando porque esas lineas van girando.
+- maxAngle: el ándulo max es 360° porque ahi la linea termina de dar la vuelta y la variable angle debería iniciar again en 0.
+- speed: la velocidad a la que se pinta la figura.
+- showPendulum: guarda true si si se está mostrando el dibujo, esto puede cambiar con la tecla 1.
+- showPendulumPath: guarda true si si se están mostrando las lineas, esto cambia con la tecla 2.
+
+```js
+let shape;
+let joints = 5;
+let lineLength = 100;
+let speedRelation = 2;
+let center;
+let pendulumPath;
+let angle = 0;
+let maxAngle = 360;
+let speed;
+let showPendulum = true;
+let showPendulumPath = true;
+```
+   
 
 ### <p align=center> Explore </p>
 

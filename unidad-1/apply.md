@@ -143,7 +143,52 @@ let speed;
 let showPendulum = true;
 let showPendulumPath = true;
 ```
-   
+
+3. un setup si lo reconozco desde antes, acá se prepara un canvas blanco de 600px x 600px. Se determina que las figuras que se vayan a pintar van a ser sin fill y que el trazo va a tener un grosor de 1px. Luego tambien se establece que el center va a ser en la mitad del canvas y se crea un vector con eso. Se llama a la función startDrawing que me imagino que es para dejar todo listo para la 1era iteración.
+
+```
+function setup() {
+  createCanvas(600, 600);
+  background(255);
+  noFill();
+  strokeWeight(1);
+  center = createVector(width / 2, height / 2);
+  startDrawing();
+}
+```
+
+4. Se define un array pendulumPath que ya se había declarado arriba. Luego ese pendulum path se recorre con un for y el tope son la cantidad de Joints, osea 5. En cada iteración del for se hace un push, osea que se añade un array [] dentro del pendulumPath. Va a quedar un array, y dentro de cada uno de los 5 espacios de ese array, van a guardarse otros 5 arrays correspondientemente.
+
+
+
+<p align=center>  
+
+<img src="https://github.com/user-attachments/assets/5d430c33-f06d-481a-ba04-52fb94f2a3d0" width="400" height="300">
+
+</p>
+
+
+El angle se hace 0 para volverlo a inicializar.
+
+Speed 
+
+```
+function startDrawing() {
+  pendulumPath = [];
+  // new empty array for each joint
+  for (let i = 0; i < joints; i++) {
+    pendulumPath.push([]);
+  }
+
+  angle = 0;
+  speed = 8 / pow(1.75, joints - 1) / pow(2, speedRelation - 1);
+}
+```
+
+
+```
+
+```
 
 ### <p align=center> Explore </p>
 

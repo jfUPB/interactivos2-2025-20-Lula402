@@ -423,6 +423,16 @@ function keyPressed() {
 
 ### Código modificado del tinker:
 
+> Explicación:
+
+El color del fondo lo modifiqué con el framecount, le puse fill blanco a la figura con un alpha a la mitad para que se viera transparentoso y pareciera una nube. le baje el grosor al stroke negro a 0.5. 
+
+Cambié que en vez de que giraran intercaladamente en sentido contrario, ahora intercaladamente el a, osea angle iba a ser -5, entonces eso hizo que ya no se viera con simetria de 3 partes sino asi redondito como una nube.
+
+Las lineas y los puntos que determinan el path los puse blancos para poder que se vieran y le mermé a el alpha para que no acapara la atención.
+
+Amplié el tamaño del canvas a 1000px x 1000px, por que en varias ocaciones la figura se salia del canvas entonces no se veia tan cool.
+
 ```js
 let shape;
 let joints = 5;
@@ -431,7 +441,7 @@ let speedRelation = 2;
 let center;
 let pendulumPath;
 let angle = 0;
-let maxAngle = 700;
+let maxAngle = 360;
 let speed;
 let showPendulum = true;
 let showPendulumPath = true;

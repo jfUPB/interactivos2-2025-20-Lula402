@@ -4,7 +4,7 @@
 
 ### Link ejemplo escogido: https://editor.p5js.org/generative-design/full/HJ2Wx9qq61N
 
-### Link Sketch modificado: 
+### Link Sketch reconstruido: https://editor.p5js.org/Lula402/full/f0DQBp8he
 
 ### <p align=center> Deconstrucción/reconstrucción </p>
 
@@ -245,6 +245,315 @@ function draw() {
 6. Es la función de keyPressed, pero es bastante intuitiva entonces si la entendí.
 
 ### <p align=center> Explore </p>
+> ### Explore #1
+Cambié el color del background, porque me di cuenta que tenia un bug y es que en el codigo original es (0,0,100) entonces se debería ver azul, pero en realidad se ve blanco, luego modifiqué esos parametros y de la nada ya si se veia azul, de todas maneras lo dejé en (100,100,0). Aumenté speedRelation, maxAngle = 180°, joints = 10 y lineLength = 50. Corregí la función de keypressed porque resulta que a algunos no se les ponia ***key*** sino ***keyCode***, ahora si funciona.
+
+<img width="363" height="292" alt="image" src="https://github.com/user-attachments/assets/9311560a-4f54-4abb-b0a8-214ae2fbe4f1" />
+
+> ### Explore #2
+
+### <p align=center> CÓDIGO FUENTE DE MI VERSIÓN </p>
+
+```js
+let shape;
+let joints = 5;
+let lineLength = 100;
+let speedRelation = 2;
+let center;
+let pendulumPath;
+let angle = 0;
+let maxAngle = 360;
+let speed;
+let showPendulum = true;
+let showPendulumPath = true;
+
+function setup() {
+  createCanvas(1000, 1000);
+  background(255);
+  noFill();
+  strokeWeight(2);
+  colorMode(HSB, 360, 100, 100, 100);
+  center = createVector(width / 2, height / 2);
+  startDrawing();
+}
+
+function startDrawing() {
+  pendulumPath = [];
+  // new empty array for each joint
+  for (let i = 0; i < joints; i++) {
+    pendulumPath.push([]);
+  }
+
+  angle = 0;
+  speed = 8 / pow(1.75, joints - 1) / pow(2, speedRelation - 1);
+}
+
+function draw() {
+  background(0, 0, 0);
+
+  angle += speed;
+
+  // each frame, create new positions for each joint
+  if (angle <= maxAngle + speed) {
+    // start at the center position
+    let pos = center.copy();
+
+    for (let i = 0; i < joints; i++) {
+      let a = angle * pow(speedRelation, i);
+      if (i % 2 == 1) a = -5;
+      let nextPos = p5.Vector.fromAngle(radians(a));
+      nextPos.setMag(((joints - i) / joints) * lineLength);
+      nextPos.add(pos);
+
+      if (showPendulum) {
+        noStroke();
+        fill(50, 255);
+        ellipse(pos.x, pos.y, 4, 4);
+        noFill();
+        stroke(255, 50);
+        line(pos.x, pos.y, nextPos.x, nextPos.y);
+      }
+
+      pendulumPath[i].push(nextPos);
+      pos = nextPos;
+    }
+  }
+
+  // draw the path for each joint
+  if (showPendulumPath) {
+    strokeWeight(6);
+    for (let i = 0; i < pendulumPath.length; i++) {
+      let path = pendulumPath[i];
+
+      beginShape();
+      // let hue = map(i, 0, joints, 120, 360);
+      let hue = frameCount % 360;
+      stroke(hue, 100, 100, 50);
+      for (let j = 0; j < path.length; j++) {
+        vertex(path[j].x, path[j].y);
+      }
+      endShape();
+    }
+  }
+}
+
+function keyPressed() {
+  if (keyCode == DELETE) {
+    startDrawing();
+  }
+
+  if (key == "+") {
+    speedRelation += 0.5;
+    if (speedRelation > 5) speedRelation = 5;
+    startDrawing();
+  }
+
+  if (key == "-") {
+    speedRelation -= 0.5;
+    if (speedRelation < 2) speedRelation = 2;
+    startDrawing();
+  }
+
+  if (keyCode == UP_ARROW) {
+    lineLength += 2;
+    startDrawing();
+  }
+
+  if (keyCode == DOWN_ARROW) {
+    lineLength -= 2;
+    startDrawing();
+  }
+
+  if (keyCode == LEFT_ARROW) {
+    joints--;
+    if (joints < 1) joints = 1;
+    startDrawing();
+  }
+
+  if (keyCode == RIGHT_ARROW) {
+    joints++;
+    if (joints > 10) joints = 10;
+    startDrawing();
+  }
+
+  if (key == "1") {
+    showPendulum = !showPendulum;
+  }
+
+  if (key == "2") {
+    showPendulumPath = !showPendulumPath;
+  }
+
+  if (key == "s" || key == "S") saveCanvas(gd.timestamp(), "png");
+}
+```
+<p align=center>
+ 
+<img width="239" height="215" alt="image" src="https://github.com/user-attachments/assets/2f30cbf0-758f-4ff4-b4f5-43edafa70432" />
+
+<img width="270" height="306" alt="image" src="https://github.com/user-attachments/assets/fe644173-c8d2-4005-92d5-48a74410f463" />
+
+<img width="217" height="229" alt="image" src="https://github.com/user-attachments/assets/5a926a5e-e3af-4d06-ac87-44112513ecc4" />
+
+</p>
+
+### Video: https://youtube.com/shorts/1gInJmx_yfM?feature=share
 
 ### <p align=center> Tinker </p>
+> ### Tinker #1
 
+<p align=center>
+<img width="266" height="214" alt="image" src="https://github.com/user-attachments/assets/719d3510-4155-483c-b884-db894ae9d01a" />
+</p>
+
+> ### Tinker #2
+<p align=center>
+<img width="262" height="223" alt="image" src="https://github.com/user-attachments/assets/860ca385-b871-4e57-8a7a-d66f2a0259e1" />
+</p>
+
+> ### Tinker #3
+<p align=center>
+<img width="263" height="215" alt="image" src="https://github.com/user-attachments/assets/9c9d32e2-e762-42ef-abb6-19da011e8fd5" />
+</p>
+
+> ### Tinker #4
+<p align=center>
+<img width="226" height="230" alt="image" src="https://github.com/user-attachments/assets/a348e075-8cde-4a95-8211-94a7629ea893" />
+</p>
+
+### Código modificado del tinker:
+
+```js
+let shape;
+let joints = 5;
+let lineLength = 100;
+let speedRelation = 2;
+let center;
+let pendulumPath;
+let angle = 0;
+let maxAngle = 700;
+let speed;
+let showPendulum = true;
+let showPendulumPath = true;
+
+function setup() {
+  createCanvas(1000, 1000);
+  background(frameCount % 360);
+  noFill();
+  strokeWeight(2);
+  colorMode(HSB, 360, 100, 100, 100);
+  center = createVector(width / 2, height / 2);
+  startDrawing();
+}
+
+function startDrawing() {
+  pendulumPath = [];
+  // new empty array for each joint
+  for (let i = 0; i < joints; i++) {
+    pendulumPath.push([]);
+  }
+
+  angle = 0;
+  speed = 8 / pow(1.75, joints - 1) / pow(2, speedRelation - 1);
+}
+
+function draw() {
+  background(frameCount % 360, 80, 80);
+
+  angle += speed;
+
+  // each frame, create new positions for each joint
+  if (angle <= maxAngle + speed) {
+    // start at the center position
+    let pos = center.copy();
+
+    for (let i = 0; i < joints; i++) {
+      let a = angle * pow(speedRelation, i);
+      if (i % 2 == 1) a = -5;
+      let nextPos = p5.Vector.fromAngle(radians(a));
+      nextPos.setMag(((joints - i) / joints) * lineLength);
+      nextPos.add(pos);
+
+      if (showPendulum) {
+        noStroke();
+        fill(50, 255);
+        ellipse(pos.x, pos.y, 4, 4);
+        noFill();
+        stroke(255, 50);
+        line(pos.x, pos.y, nextPos.x, nextPos.y);
+      }
+
+      pendulumPath[i].push(nextPos);
+      pos = nextPos;
+    }
+  }
+
+  // draw the path for each joint
+  if (showPendulumPath) {
+    strokeWeight(0.5);
+    for (let i = 0; i < pendulumPath.length; i++) {
+      let path = pendulumPath[i];
+
+      beginShape();
+      // let hue = map(i, 0, joints, 120, 360);
+      let hue = (100,100,0);
+      stroke(hue, 100, 0, 50);
+      fill(hue, 0, 100, 50);
+      for (let j = 0; j < path.length; j++) {
+        vertex(path[j].x, path[j].y);
+      }
+      endShape();
+    }
+  }
+}
+
+function keyPressed() {
+  if (keyCode == DELETE) {
+    startDrawing();
+  }
+
+  if (key == "+") {
+    speedRelation += 0.5;
+    if (speedRelation > 5) speedRelation = 5;
+    startDrawing();
+  }
+
+  if (key == "-") {
+    speedRelation -= 0.5;
+    if (speedRelation < 2) speedRelation = 2;
+    startDrawing();
+  }
+
+  if (keyCode == UP_ARROW) {
+    lineLength += 2;
+    startDrawing();
+  }
+
+  if (keyCode == DOWN_ARROW) {
+    lineLength -= 2;
+    startDrawing();
+  }
+
+  if (keyCode == LEFT_ARROW) {
+    joints--;
+    if (joints < 1) joints = 1;
+    startDrawing();
+  }
+
+  if (keyCode == RIGHT_ARROW) {
+    joints++;
+    if (joints > 10) joints = 10;
+    startDrawing();
+  }
+
+  if (key == "1") {
+    showPendulum = !showPendulum;
+  }
+
+  if (key == "2") {
+    showPendulumPath = !showPendulumPath;
+  }
+
+  if (key == "s" || key == "S") saveCanvas(gd.timestamp(), "png");
+}
+```

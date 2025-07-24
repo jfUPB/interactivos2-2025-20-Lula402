@@ -57,6 +57,21 @@ Ver videos de referentes e intentar entender y hacer el código, creo que han si
 
 
 
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 > Actividad 8
+
+### 1. Continuar: ¿Qué actividad, discusión o recurso de esta unidad te ayudó más a entender qué es el diseño generativo y te motivó a explorar?
+
+
+### 2. Dejar de hacer: ¿Hubo algún referente, lectura o parte de la clase que te pareció menos relevante, confusa o que podríamos omitir para enfocarnos en otras cosas?
+
+
+### 3. Empezar a hacer: ¿Qué te gustaría que hiciéramos en las próximas unidades? ¿Más teoría, más ejemplos de artistas específicos, más desafíos de codificación desde cero, más tiempo para experimentar?
+
+
+### 4. Método de aprendizaje: ¿Cómo te sentiste al usar el método Deconstrucción/Reconstrucción? ¿Te gustaría que siguiéramos usando este enfoque tan estructurado para aprender nuevos conceptos técnicos? ¿Por qué?
+
+
+### 5. Comentario adicional: ¿Hay algo más que quieras compartir sobre tu experiencia general hasta ahora?

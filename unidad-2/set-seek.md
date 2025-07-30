@@ -38,3 +38,17 @@
 </p>
 
 - El artista deja planteado varias ideas de ponerle música al fondo. Todo esto que el hizo, lo hizo pensando en que iba a ser acompañado de música y para generar sentimientos: "it does not do that very well, but I think it will".
+
+------------------------------------------------------------------------------------------------------------------------------
+
+> ACTIVIDAD 2
+
+| Prometeo  | Fase I | Fase II  | Fase III |
+| ------------- | ------------- | ------------- | ------------- |
+| **Input**  | Content Cell  | Content Cell  | Content Cell  |
+| **process** | Content Cell  | Content Cell  | Content Cell  |
+| **output** | Content Cell  | Content Cell  | Content Cell  |
+
+
+### ¿Qué elemento del diseño te parece más innovador y por qué? 
+### ¿Cómo crees que la experiencia del público cambiaría si uno de los inputs (por ejemplo, las palabras del público) fuera eliminado?

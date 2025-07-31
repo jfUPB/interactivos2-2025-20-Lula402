@@ -43,12 +43,14 @@
 
 > ACTIVIDAD 2
 
-| Prometeo  | Fase I | Fase II  | Fase III |
+| Prometeo  | Fase I: OPRESIÓN| Fase II: CONFLICTO  | Fase III: REVELACIÓN |
 | ------------- | ------------- | ------------- | ------------- |
-| **Input**  | Content Cell  | Content Cell  | Content Cell  |
-| **process** | Content Cell  | Content Cell  | Content Cell  |
+| **Input**  | El primer input es una onda de sonido, de la que se van a extraer características como la intensidad y el tono de la voz de Nerón. El otro input es el kinect, que trackea el movimiento del cuerpo de Nerón mientras está en el escenario. El propio Kineckt tiene sus inputs: cámara RGB, sensor de profundidad (infrarrojo) y micrófono direccional.  | Content Cell  | Content Cell  |
+| **process** | Hay un sistema de partículas, entre los parámetros que tiene, están la densidad y la velocidad, esos parámetros van a ser manipulados por el input de la onda de sonido. La proyección de luz que representa el aura de Nerón inicia por lo que el kinect trackea   | Content Cell  | Content Cell  |
 | **output** | Content Cell  | Content Cell  | Content Cell  |
 
 
 ### ¿Qué elemento del diseño te parece más innovador y por qué? 
 ### ¿Cómo crees que la experiencia del público cambiaría si uno de los inputs (por ejemplo, las palabras del público) fuera eliminado?
+
+

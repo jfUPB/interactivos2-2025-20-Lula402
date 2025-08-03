@@ -50,7 +50,14 @@
 | **output** | El domo está oscuro y los colores que se ven son desaturados. Desde la parte superior del domo caen las particulas en forma de gotas azules, no van a ser identicas entre si, van a verse diferentes dependiendo del input. Se podrá ver al rededor de Nerón un marco de luz dinámico que se va a mover con él y lo va a bordear.  | Los fragmentos geométricos rojos y blancos se ven moverse por todo el domo y rebotan cuando tocan el aura de Nerón o cuando este envia una onda sónica. El otro output es una onda, probablemente representada con arcos que sale desde la mano que Nerón movió bruscamente. | Se van a visualizar las palabras escogidas por el público, pasando por todo el domo. Se va a ver la llama de Nerón cada vez más potente y siempre moviendose con él. Se van a ver las palabras desaparecer al tocar la llama. Se va a ver un árbol blanco de luz crecer en el domo y también el florecer de alguna flor. |
 
 ### ¿Qué elemento del diseño te parece más innovador y por qué? 
+El elemento más innovador me parece el de la fase III, porque involucra diferentes personas en la experiencia + controlar el domo + todas las visuales siempre acompañando a Nerón. Es innovador porque no solo se queda en que cuando alguien del público escoge algo, esto proyecte en el domo, sino que se logra que esas palabras sigan incluso interactuando con lo que ya se está viendo. Cuando esa palabra toca la llama, la llama se aviva y siempre acompaña a Nerón es el elemento de diseño más diferente de la experiencia.
+
 ### ¿Cómo crees que la experiencia del público cambiaría si uno de los inputs (por ejemplo, las palabras del público) fuera eliminado?
+Cambiaría totalmente, y para mal. Los inputs en una experiencia son lo que determinan que tanta interactividad e inmersión hay, si se le quita eso al público, probablemente van a seguir disfrutando pero no va a ser tan memorable o impactante. 
+
+Por ejemplo las palabras del público, ver no es lo mismo que participar. El hecho de sentir que uno está aportando o modificando lo que los otros ven, genera recordación y aumenta todas esas emociones que no son causadas solo por "ver" el domo sino por poder participar en él.
+Sin ese input, la experiencia seguiría siendo visualmente atractiva, pero perdería parte de su impacto, dejaría de sentirse viva y compartida.
+
 
 
 

@@ -58,7 +58,27 @@ Cambiaría totalmente, y para mal. Los inputs en una experiencia son lo que dete
 Por ejemplo las palabras del público, ver no es lo mismo que participar. El hecho de sentir que uno está aportando o modificando lo que los otros ven, genera recordación y aumenta todas esas emociones que no son causadas solo por "ver" el domo sino por poder participar en él.
 Sin ese input, la experiencia seguiría siendo visualmente atractiva, pero perdería parte de su impacto, dejaría de sentirse viva y compartida.
 
+------------------------------------------------------------------------------------------------------------------------------
 
+> ACTIVIDAD 3
 
+### Explica con tus propias palabras la diferencia entre un “evento” en una película tradicional y un “nodo generativo” en la experiencia de “Prometeo”.
 
+Un evento es un momento dentro de algo más grande, por ejemplo de un película, los eventos son el inicio, el nudo o climax y el descenlace. Se espera que pasen esos eventos. Un nodo generativo es un momento con diferentes posibilidades de outcomes, es como si se abriera el momento pero lo que vaya a pasar no se sabe con certeza. 
+
+En la peli ***Juego de gemelas*** el climax podría ser cuando ellas se dan cuenta que son gemelas, o el descenlace es cuando los papás se vuelven a casa y vuelven a ser una familia. Son momentos puntuales de una historia. 
+
+En la experiencia de ***"prometeo"*** hay 3 fases, en cada fase hay varias alternativas de las cosas que pueden pasar, pero no son predecibles, porque van a depender de los diferentes factores afectando en el momento. Son momentos que no están fijos, están sujetos a lo que pase, crean miltilinealidad, porque desde una semilla (linea) pueden salir diferentes ramas (outcomes).
+
+### ¿Quién crees que tiene más “poder” o “agencia” en la creación de la experiencia final de “Prometeo”: el artista, el público o los diseñadores del sistema? Justifica tu respuesta.
+
+La verdad creo que los 3 roles tienen el poder igual para la creación de la experiencia final, porque los 3 ponen su granito para que sea memorable y con impacto. 
+
+Si tuviese que elegir uno, escogería el artista. El artista es el que tiene más poder en la creación de la experiencia final, porque aunque los diseñadores creen el sistema, ellos van a ser quienes interactuen con él o quienes lo hagan sentir con vida en vivo. La interacción del público es un plus muy importante, pero aún sin la intervención de las palabras sigue habiendo experiencia final. 
+
+Por lo anterior, el artista es quien cambia el mood, permite la multilinealidad principal de la experiencia, es quien interactua en el escenario y el que conecta su arte con el público y crea la experiencia final.
+
+### El documento dice que el objetivo es generar “EPIFANÍAS” en lugar de “empatía”. ¿Qué crees que significa esto en el contexto de una experiencia inmersiva?
+
+En el contexto de una experiencia inmersiva una epifanía es una manifestación o revelación que te hace sentir algo desde adentro y conectarlo con tu propia historia. Mientras que la empatía es ponerse en los zapatos del otro, en una experiencia inmersiva no se quiere que el público sienta por el otro, sino que se quiere generar una epifanía, donde se sienten y se entienden las cosas por uno mismo.
 

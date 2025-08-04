@@ -36,68 +36,72 @@
 **Output:** …
 
 **Nodos:** [Describe dónde y cómo ocurren los nodos en tu diseño]
+
 **Multi-linealidad y emergencia:** [Explica cómo tu sistema genera una experiencia única cada vez]
+
 **Staging la apertura:** [Detalla cómo escenificas la experiencia en lugar de contarla]
+
 **Agencia Distribuida:** [Analiza cómo se distribuye la agencia entre artista, público y sistema en tu propuesta]
 
 ### <p align= center> LETRA </p>
 
-ah dejé la fe en un compraventa y quise
+Dejé la fe en un compraventa y quise
 
-tomar atajos hacia el final del planeta hoy La sonrisa es lo que más me acompleja pues ya viejo a la nada con el
+tomar atajos hacia el final del planeta, hoy La sonrisa es lo que más me acompleja pues ya viajo a la nada con el
 
-epitafio de mi vieja y quise contar al infinito pero acompañado de la soledad
+epitafio de mi vieja. Quise contar al infinito pero, acompañado de la soledad
 
-si descanso me limito pero si sigo adelante me limito mi realidad el dolor es exquisito la
+si descanso me limito pero si sigo adelante me limita mi realidad. El dolor es exquisito, la
 
-tristeza suele darme placer yo ya no sé qué necesito pero desde algo tengo sed
+tristeza suele darme placer yo ya no sé qué necesito, pero de ese algo tengo sed
 
-voy a la nada con nadie sin todo voy por todo con nada sin nadie voy a la nada
+voy a la nada con nadie sin todo, voy por todo con nada sin nadie, voy a la nada
 
-con nadie sin todo voy por todo Sin un pes estoy fuera de la faz
+con nadie sin todo, voy por todo Sin un peso y fuera de la faz
 
 para morir hay que vivir aún más Solamente quiero hacerme el fuerte
 
-porque llorar la muerte si la vida duele más sin un peso y fuera de la faz para
+porque llorar la muerte si la vida duele más, sin un peso y fuera de la faz para
 
-morir hay que vivir aún más Solamente quiero hacerme el fuerte porque llorarla
+morir hay que vivir aún más Solamente quiero hacerme el fuerte porque llorar la
 
-fuerte y la vida duele más no hay salida al Laberinto no hay escape de este
+muerte si la vida duele más. No hay salida al Laberinto, no hay escape de este
 
 Laberinto si la musa me cobija con su grito y es la progenitora de las frases
 
-que yo cito adicto a mirar la luna llena derramarme con mis venas a no esperar
+que yo cito, adicto, a mirar la luna, a llena derramarme con mis venas, a no esperar
 
-noches buenas despreciando las faenas para no soñar con sirenas con las manos vacías pero con el alma llena y nena no
+noches buenas despreciando las faenas pa' no soñar con sirenas con las manos vacías pero con el alma llena y nena no
 
 tengo un auto de lujo tengo un cuarto vacío acompañado de reblujo un Lienzo en
 
-blanco que mantengo allí colgado no tengo fortuna y eso me hace afortunado voy a la nada con nadie sin todo voy por
+blanco que mantengo allí colgado no tengo fortuna y eso me hace afortunado, voy a la nada con nadie sin todo voy por
 
 todo con nada sin nadie voy a la nada con nadie sin todo voy por
 
-todo si un peso y fuera de la faz para morir hay que vivir aún más Solamente
+todo. Sin un peso y fuera de la faz para morir hay que vivir aún más Solamente
 
-quiero hacerme el fuerte porque que llorar la muerte si la vida duele más sin un peso y fuera de la Paz para morir
+quiero hacerme el fuerte porque que llorar la muerte si la vida duele más, sin un peso y fuera de la Paz para morir
 
-hay que vivir aún más Solamente quiero hacerme el fuerte porque llorar la fuerte y la vida duele más voy a la nada
+hay que vivir aún más Solamente quiero hacerme el fuerte porque llorar la muerte si la vida duele más voy a la nada
 
 con nadie sin todo voy por todo con nada sin nadie voy a la nada con nadie sin
 
 todo voy por todo voy por todo voy a la nada con nadie sin todo voy por todo con
 
-nada sin nadie voy a la nada con nadie sin todo voy por todo yo voy por todo si
+nada sin nadie voy a la nada con nadie sin todo voy por todo yo voy por todo. Sin 
 
-en un que estoy fuera de la f para morir hay que vivir aún más Solamente quiero
+un peso y fuera de la faz pa' morir hay que vivir aún más, Solamente quiero
 
 hacerme el fuerte porque llorar la muerte si la vida duele más sin un peso
 
-y fuera de La Paz Va morir hay que vivir aún más Solamente quiero hacerme el
+y fuera de La Paz pa' morir hay que vivir aún más Solamente quiero hacerme el
 
 fuerte porque llorar la fuerte si la vida duele más si la vida duele más
 
 si la vida duele más Solamente quiero hacerme el fuerte si la vida duele más
 
-si la vida duele más si la vida duele
+si la vida duele más si la vida duele más
 
-más voy por todo yo voy por
+voy por todo yo voy por todo
+

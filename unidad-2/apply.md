@@ -3,15 +3,19 @@
 ## 🛠 Fase: Apply
 
 
-**Título del Proyecto:** [Nombre de tu experiencia]
+**Título del Proyecto:** Entre la vida y la muerte
 
 **Canción seleccionada:** Caronte - Nerón Arkano
 https://youtu.be/nh7VWbBrlOA?feature=shared&t=1508
 
-**Concepto Raíz:** [Tu declaración de intenciones]
+**Concepto Raíz:**
+
+Caronte no es solo un viaje a la muerte o al olvido. Es una travesía entre la vida y la muerte, la memoria y el olvido, el pasado y la dignidad presente. El espacio será una travesía sensorial donde los participantes, por medio de la canción de Nerón, cruzan simbólicamente el río con Caronte, enfrentando memorias, heridas y recuerdos. Nerón no solo rapea en Vivo en el domo, sino que convoca. El público no solo observa, cruzan con él el río y lo acompañan.
 
 ### Fase 1: [Nombre de la fase]
 **Emoción Buscada:** …
+
+
 
 **Input:** …
 
@@ -38,6 +42,22 @@ https://youtu.be/nh7VWbBrlOA?feature=shared&t=1508
 
 **Output:** …
 
+### Fase 3: [Nombre de la fase]
+**Emoción Buscada:** …
+
+**Input:** …
+
+**Process:** …
+
+**Output:** …
+
+
+cruzando el rio, neron es una de esas almas que se queda atrapada, por eso su aureola blancusca. Cada que 
+
+
+
+
+
 **Nodos:** [Describe dónde y cómo ocurren los nodos en tu diseño]
 
 **Multi-linealidad y emergencia:** [Explica cómo tu sistema genera una experiencia única cada vez]
@@ -45,6 +65,10 @@ https://youtu.be/nh7VWbBrlOA?feature=shared&t=1508
 **Staging la apertura:** [Detalla cómo escenificas la experiencia en lugar de contarla]
 
 **Agencia Distribuida:** [Analiza cómo se distribuye la agencia entre artista, público y sistema en tu propuesta]
+
+### <p align= center> CARONTE </p>
+
+En la mitología griega, Caronte (Χάρων en griego) es el barquero que transporta las almas de los muertos a través del río Aqueronte, que separa el mundo de los vivos del Hades, el reino de los muertos. Era una figura sombría y desagradable, representada a menudo como un anciano, a veces con barba, que exigía un pago (un óbbolo) por sus servicios. Las almas que no podían pagar, o que no habían sido debidamente enterradas, vagaban por la orilla del río durante cien años. 
 
 ### <p align= center> LETRA </p>
 
@@ -107,5 +131,6 @@ si la vida duele más Solamente quiero hacerme el fuerte si la vida duele más
 si la vida duele más si la vida duele más
 
 voy por todo yo voy por todo
+
 
 

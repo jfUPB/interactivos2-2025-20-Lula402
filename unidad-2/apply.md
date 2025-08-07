@@ -65,14 +65,42 @@ Un kinect va a estar ubicado trackeando a Nerón en el escenario. El kinect va a
 
 > ---------------------------------------------------------------------------------------------------------------------------
 
-### Fase 2: [Nombre de la fase]
-**Emoción Buscada:** …
+### Fase 2: Espíritus varados
+**Emoción Buscada:** 
+Vacío, desesperanza.
 
-**Input:** …
+Caronte reprensentado como un anciano en una barca y Nerón como una de esas almas blancas que no podían cruzar el río hacia la muerte. *"fuera de la faz"*, *"pa' morir hay que vivir aún más"*, *"porque llorar la muerte si la vida duele más"*, son todos versos del coro que serán representados por esa sensación de estar muerto en vida, que la vida duele, que todavía no es tiempo de la muerte porque queda más por vivir. Esta fase se va a repetir cada coro porque me parece importante esa costancia. 
 
-**Process:** …
+**Input:**
 
-**Output:** …
+- El kinect seguirá trackeando la posición y movimientos de Nerón por todo el escenario. Para ello se necesitará fijarse mucho en la silueta de Nerón y ese será el input enviado.
+
+  También con esta posición se calculará la cercanía de la barca de Caronte.
+
+- La onda sonora seguirá siendo un input, pero esta vez para extraer el beat de la canción en vivo.
+
+
+**Process:** 
+
+- Tomando la posición de Nerón en el escenario, el aura blancusca, se va  a proyectar teniendo como referencia la silueta de Nerón, es decir, nerón actuará como un box collider y esta capa blanca se va a aderir a él.
+
+- La posición de la barca de Caronte siempre va a estar trackeada, a medida de que esta brecha entre la posición de la barca con la posicón de Nerón disminuya, la barca de Caronte se va a alejar en el río, para simular que no lo puede alcanzar. El domo no tiene profundidad, pero esto sería visualmente simulado poniendo la barca cada vez más arriba en el río.
+
+  Zonas más altas del domo = perspectiva falsa de profundidad
+  Zonas más bajas del domo = perspectiva falsa de cercanía
+  
+  La trayectoria es circular, como si Caronte diera vueltas alrededor del domo sin jamás llegar a cruzarlo.
+
+- Después de determinar los BPMS de el beat, ese numero se usará para remapear el ritmo al que las estrellas cambian su Alpha. Cada beat las estrellas tendrán el alpha al 255 y entre beats bajará a masomenos 80. Parece ser que p5.js tiene una librería llamda beat.js, para captar esos beats. El remapeo se hace con la función map, donde se mapean los beats y se convierten a un valor del alpha.
+  
+
+**Output:**
+
+- El domo entero se transforma en un río oscuro y estrellado.
+- El techo es cielo con estrellas que giran lento, y más abajo, las paredes simulan agua que refleja esas estrellas.
+- Una figura encapuchada (Caronte) aparece remando lentamente en círculo alrededor del domo.
+- Nerón en el escenario bordeado por un aura blancusca.
+
 > ---------------------------------------------------------------------------------------------------------------------------
 ### Fase 3: [Nombre de la fase]
 **Emoción Buscada:** …
@@ -176,6 +204,7 @@ si la vida duele más Solamente quiero hacerme el fuerte si la vida duele más
 si la vida duele más si la vida duele más
 
 voy por todo yo voy por todo
+
 
 
 

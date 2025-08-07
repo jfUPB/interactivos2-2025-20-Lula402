@@ -91,7 +91,7 @@ Caronte reprensentado como un anciano en una barca y Nerón como una de esas alm
   
   La trayectoria es circular, como si Caronte diera vueltas alrededor del domo sin jamás llegar a cruzarlo.
 
-- Después de determinar los BPMS de el beat, ese numero se usará para remapear el ritmo al que las estrellas cambian su Alpha. Cada beat las estrellas tendrán el alpha al 255 y entre beats bajará a masomenos 80. Parece ser que p5.js tiene una librería llamda beat.js, para captar esos beats. El remapeo se hace con la función map, donde se mapean los beats y se convierten a un valor del alpha.
+- Después de determinar los BPMS del beat, ese numero se usará para remapear el ritmo al que las estrellas cambian su Alpha. Cada beat las estrellas tendrán el alpha al 255 y entre beats bajará a masomenos 80. Parece ser que p5.js tiene una librería llamda beat.js, para captar esos beats. El remapeo se hace con la función map, donde se mapean los beats y se convierten a un valor del alpha.
   
 
 **Output:**
@@ -121,20 +121,42 @@ Nerón sigue rapeando letras melancólicas, pero hay una lucesita y es que dentr
 - El domo que inició como un "lienzo en blanco", se convirtió en un espacio de expresión como las paredes de la comuna 13.
    
 > ---------------------------------------------------------------------------------------------------------------------------
-### Fase 4: [Nombre de la fase]
-**Emoción Buscada:** …
+### Fase 4: el viaje no termina aquí.
 
-**Input:** …
+**Emoción Buscada:**
+Resiliencia, fuerza.
 
-**Process:** …
+El arte bombea esa sangre y esa resiliencia entre tanto dolor. Por eso el arte de los grafitis y el rap de Nerón dan vida a el domo. El domo se llena de vida y Nerón y público conectan más que nunca en esta canción, por decirlo asi, es el climax de Caronte. Caronte ya no está en el río, porque se dejó en claro que Nerón y el público no están listos para cruzar el río y morir. Solo está el río y el cielo, los grafitis coloreando todo el domo y todos los presentes son esas almas que no van a pasar aún.
 
-**Output:** …
+**Input:**
 
+- Aun continua la interactividad del público con las estaciones interactivas con la pantalla y el lapiz.
 
-cruzando el rio, neron es una de esas almas que se queda atrapada, por eso su aureola blancusca. Cada que 
+- Como input se conserva la onda de sonido de la canción en vivo. Se extrae de acá los BPMS como en la fase 2.}
 
+- Con el Kinect se trackeará especialmente el movimiento del brazo de Nerón, del brazo con el que no esté sosteniendo el micrófono. Se tomará como input la posición A y la posición B.
 
+**Process:**
 
+- Los strings de las palabras escritas por el público se siguen procesando igual que en la fase anterior.
+
+- Después de determinar los BPMS del beat, ese numero se usará para que los grafitis "palpiten" al ritmo de la canción. Se va a remapear el valor del beat a el tamaño de la palabra grafiteada.
+
+  Cuando marque el beat, la palabra se mostrará más grande. Cuando esté entre beats, la palabra se mostrará más pequeña. De esa manera se creará el efecto de que los grafitis palpitan al ritmo de la canción.
+
+- La velocidad con la que nerón mueva el brazo va a tener un umbral. Se le pedirá a Nerón que porfavor mueva el brazo hacia el cielo llevando el ritmo:
+
+  Si la velocidad, que va a representar la fuerza, con la que Nerón mueve el brazo pasa el umbral preconfigurado, entonces todos los grafitis mostrados en pantalla van a cambiar de color aleatoriamente.
+
+  De cierta manera el resultado sería el mismo si usamos como input el beat, ya que nerón con su brazo va a llevar el beat. Pero ese es el truco de lo generativo, va a ser slightly different si el input no es el mismo.
+
+- La posición de cada grafiti debe mantenerse actualizada, ya que hay que asegurase de que nunca toquen el agua, los grafitis solo se van a escribir en el cielo. Debido a esto, la posición del río debe actual como un collider, para que nunca lo toquen.
+
+**Output:** 
+
+- Cielo oscuro y río moviendose abajo al rededor del domo.
+  
+- Grafitisde palabras palpitantes y coloridos en el cielo.
 
 
 **Nodos:** [Describe dónde y cómo ocurren los nodos en tu diseño]
@@ -214,6 +236,7 @@ si la vida duele más Solamente quiero hacerme el fuerte si la vida duele más
 si la vida duele más si la vida duele más
 
 voy por todo yo voy por todo
+
 
 
 

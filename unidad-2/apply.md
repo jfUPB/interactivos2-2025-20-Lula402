@@ -157,15 +157,49 @@ El arte bombea esa sangre y esa resiliencia entre tanto dolor. Por eso el arte d
 - Cielo oscuro y río moviendose abajo al rededor del domo.
   
 - Grafitisde palabras palpitantes y coloridos en el cielo.
+  
+
+> ---------------------------------------------------------------------------------------------------------------------------
 
 
-**Nodos:** [Describe dónde y cómo ocurren los nodos en tu diseño]
+**<p align=center> Nodos </p>**
 
-**Multi-linealidad y emergencia:** [Explica cómo tu sistema genera una experiencia única cada vez]
+En mi propuesta de Caronte, cada uno de los nodos no determina el futuro, sino que lo posibilita.
 
-**Staging la apertura:** [Detalla cómo escenificas la experiencia en lugar de contarla]
+**Nodo de inicio:** la primera nota que cante Nerón activa el sistema sin que este sepa cómo será su interpretación ese día. Si canta con melancolía, la niebla será más clara y si canta con rabia, se vuelve más densa y oscura. Su frecuencia abre diferentes caminos posibles.
 
-**Agencia Distribuida:** [Analiza cómo se distribuye la agencia entre artista, público y sistema en tu propuesta]
+**Nodo túnel:** cada paso de Nerón deforma el túnel, reacciona a su movimiento, y ese instante crea opciones visuales que solo existen en ese “ahora" y dependiendo de como se mueva Nerón por el escenario. Las palabras que se van a mostrar en el domo dependiendo de cada verso, son aleatorias, como puede que en una presentación se muestre "soledad" en otra se puede ver "desamparo".
+
+**Nodo coro:** cuando el aura blanca de Nerón se acerca al barco este se aleja. La cercanía de su cuerpo y el movimiento en vivo lo determinan. Cada estrella palpita con los BPMs de ese día.
+
+**Nodo final:** cuando el público escribe palabras en la estación de la Fase 3 y 4, no se sabe qué va a aparecer en el cielo. “Soledad”, “mamá”, “sancocho”, “Medallo”. Cada palabra modifica el cielo de formas únicas, y cada noche ese cielo será otro.
+Además de el ritmo, la fuerza y velocidad con la que Nerón mueva la mano, determinará el cambio de color de los grafitis, que puede ser diferente cada noche.
+
+**<p align=center> Multi-linealidad y emergencia </p>**
+
+- Nerón nunca canta igual. La saturación de la niebla, el tono emocional, el tempo, todo cambia.
+
+- El público escribe palabras diferentes y cada presentación tiene nuevas personas (generalmente). Cada conjunto de palabras abre un cielo grafiteado y visuales distintas.
+
+- El sistema responde a inputs físicos (posición en el escenario, intensidad, movimiento) y sonoros (frecuencia, beat, verso).
+
+
+**<p align=center> Staging la apertura </p>**
+
+No digo “esto trata sobre el duelo” o "esto trata sobre el viaje desde la vida a la muerte". Lo muestro: Nerón intenta moverse, pero el túnel lo persigue. Canta y el entorno responde. Su cuerpo es atravesado por niebla y en el coro es uno de esos espíritus. El público lanza palabras al cielo desde su propio sentir y experiencia.
+
+No representamos “el viaje”. El sistema está diseñado para simular estar atrapado en un viaje sin fin, sin destino. El domo nunca entrega cierre. Ni muerte, ni retorno. Solo presente y como Nerón y el público viven en él.
+
+**<p align=center> Agencia Distribuida </p>**
+
+**Agencia Distribuida:** el control no es de uno solo. Todos ponen su granito de arena y hacen que cada presentación tenga un outcome diferente.
+
+**Agencia Intuitiva del Artista:** Nerón no hace nada milimetricamente pensado desde antes, es su arte y concexión con el público lo que determinan el concierto. Cada movimiento, su energía, su fuerza en las palabras, el ánimo con el que canta es lo que mueve el domo.
+
+**Agencia Co-creadora del Público:** al enviar sus palabras, se convierten en co-autores del paisaje grafiteado visual.
+
+**Agencia Interpretativa del Visualista:** guía las transiciones y se toma el tiempo de sentir la canción y diseñar un concierto generativo para que entre el público y el artista, generen en vivo una experiencia única.
+
 
 ### <p align= center> CARONTE </p>
 
@@ -236,6 +270,7 @@ si la vida duele más Solamente quiero hacerme el fuerte si la vida duele más
 si la vida duele más si la vida duele más
 
 voy por todo yo voy por todo
+
 
 
 

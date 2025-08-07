@@ -102,16 +102,26 @@ Caronte reprensentado como un anciano en una barca y Nerón como una de esas alm
 - Nerón en el escenario bordeado por un aura blancusca.
 
 > ---------------------------------------------------------------------------------------------------------------------------
-### Fase 3: [Nombre de la fase]
-**Emoción Buscada:** …
+### Fase 3: lienzo en "blanco"
 
-**Input:** …
+**Emoción Buscada:**
+Melancolía, creatividad.
 
-**Process:** …
+Nerón sigue rapeando letras melancólicas, pero hay una lucesita y es que dentro de todo ese dolor es que nace su creatividad. El domo es ese cielo oscuro en el que están todos, pero se comienza a llenar de color y palabras inpredecibles cuando el público interactúa y conecta. *"Tengo un cuarto vacío lleno de reblujo"*, *"Un lienzo en blanco que mantengo allí colgado"* son versos que vienen a la vida con esa representación de grafitis, como lo es hoy en día la comuna 13.
 
-**Output:** …
+**Input:**
+- En un lugar del domo , van a haber dos estaciones interactivas . Las taciones tendrán una pantalla y un lapicito digital. En esta pantalla el público va a poder escribir una palabra y eso se tomara como un input string.
+
+**Process:**
+- El input String de cada palabra va a ser procesado para que con una fuente de grafiti sea proyectado al cielo oscuro del domo. El tamaño va a ser escogido aleatoriamente, pero con un rango definido para poder que las palabras sean legibles o que no ocupen todo el domo. El color de cada palabra va a ser randomizado.
+
+**Output:**
+- Cielo muy oscuro.
+- Grafitis de palabras, cada una con un color y tamaño diferentes escritos por todo el domo.
+- El domo que inició como un "lienzo en blanco", se convirtió en un espacio de expresión como las paredes de la comuna 13.
+   
 > ---------------------------------------------------------------------------------------------------------------------------
-### Fase 3: [Nombre de la fase]
+### Fase 4: [Nombre de la fase]
 **Emoción Buscada:** …
 
 **Input:** …
@@ -204,6 +214,7 @@ si la vida duele más Solamente quiero hacerme el fuerte si la vida duele más
 si la vida duele más si la vida duele más
 
 voy por todo yo voy por todo
+
 
 
 

@@ -118,3 +118,257 @@ ellipse(circleX, circleY, 50, 50);
 + El loop draw() de p5.js corre ~60 FPS
 
   + Como circleX/circleY ya se actualizaron, el círculo se dibuja en la nueva posición en el siguiente frame.
+
+-----------------------------------------------------------------------------------------------------------
+
+> ACTIVIDAD 2
+
+### <p align=center> Link video funcionamiento </p>
+
+https://youtu.be/Dnc6VVzPo4s
+
+### <p align=center> Aplicación de las visuales </p>
+
+```js
+let socket;
+let circleX_m = 200;
+let circleY_m = 200;
+let circleX_d = 200;
+let circleY_d = 200;
+const port = 3000;
+
+
+function setup() {
+    createCanvas(300, 400);
+    background(220);
+
+    //let socketUrl = 'http://localhost:3000';
+    socket = io(); 
+
+    // Evento de conexión exitosa
+    socket.on('connect', () => {
+        console.log('Connected to server');
+        socket.emit('messageClienteVisuales', 'Client connected to Visuales room');
+        
+    });
+
+    // Recibir mensaje del servidor
+    socket.on('message_mobile', (data) => {
+        console.log(`Received message: `,data);
+
+        try {
+            let parsedData = JSON.parse(data);
+            if (parsedData && parsedData.type === 'touch') {
+                circleX_m = parsedData.x;
+                circleY_m = parsedData.y;
+            }
+        } catch (e) {
+            console.error("Error parsing received JSON:", e);
+        }
+    });    
+
+     socket.on('message_desktop', (data) => {
+        console.log(`Received message: `,data);
+        try {
+            let parsedData = JSON.parse(data);
+            if (parsedData && parsedData.type === 'touch') {
+                circleX_d = parsedData.x;
+                circleY_d = parsedData.y;
+            }
+        } catch (e) {
+            console.error("Error parsing received JSON:", e);
+        }
+    });    
+
+    // Evento de desconexión
+    socket.on('disconnect', () => {
+        console.log('Disconnected from server');
+    });
+
+    socket.on('connect_error', (error) => {
+        console.error('Socket.IO error:', error);
+    });
+}
+
+function draw() {
+    background(220);
+    fill(255, 0, 0);
+    ellipse(circleX_m, circleY_m, 50, 50);
+    fill(0, 255, 0);
+
+    ellipse(circleX_d, circleY_d, 50, 50);
+}
+
+```
+
+### <p align=center> Aplicación del Server </p>
+
+```js
+const express = require('express');
+const http = require('http');
+const socketIO = require('socket.io');
+
+const app = express();
+const server = http.createServer(app); 
+const io = socketIO(server); 
+const port = 3000;
+
+app.use(express.static('public'));
+
+io.on('connection', (socket) => {
+    
+    console.log('New client connected');
+    socket.on('message_mobile', (message_mobile) => {
+        console.log(`Received message mobile => ${message_mobile}`);
+        io.to("Visuales room").emit("message_mobile",message_mobile);
+
+    });
+    
+    socket.on('message_desktop', (message_desktop) => {
+        console.log(`Received message desktop => ${message_desktop}`);
+        io.to("Visuales room").emit("message_desktop",message_desktop);
+        
+    });
+
+
+    socket.on('messageClienteVisuales', (messageClienteVisuales) => {
+        socket.join("Visuales room");
+    });
+ 
+ 
+
+    socket.on('disconnect', () => {
+        console.log('Client disconnected');
+    });
+});
+
+server.listen(port, () => {
+    console.log(`Server is listening on http://localhost:${port}`);
+});
+```
+
+### <p align=center> Aplicación del cliente Mobile </p>
+
+```js
+let socket;
+let lastTouchX = null; 
+let lastTouchY = null; 
+const threshold = 5;
+
+function setup() {
+    createCanvas(300, 400);
+    background(220);
+
+    // Conectar al servidor de Socket.IO
+    //let socketUrl = 'http://localhost:3000';
+    socket = io();
+
+    socket.on('connect', () => {
+        console.log('Connected to server');
+    });
+
+    socket.on('message', (data) => {
+        console.log(`Received message: ${data}`);
+    });
+
+    socket.on('disconnect', () => {
+        console.log('Disconnected from server');
+    });
+
+    socket.on('connect_error', (error) => {
+        console.error('Socket.IO error:', error);
+    });
+}
+
+function draw() {
+    background(220);
+    fill(255, 128, 0);
+    textAlign(CENTER, CENTER);
+    textSize(24);
+    text('Touch to move the circle', width / 2, height / 2);
+}
+
+function touchMoved() {
+    if (socket && socket.connected) { 
+        let dx = abs(mouseX - lastTouchX);
+        let dy = abs(mouseY - lastTouchY);
+
+        if (dx > threshold || dy > threshold || lastTouchX === null) {
+            let touchData = {
+                type: 'touch',
+                x: mouseX,
+                y: mouseY
+            };
+            socket.emit('message_mobile', JSON.stringify(touchData));
+
+            lastTouchX = mouseX;
+            lastTouchY = mouseY;
+        }
+    }
+    return false;
+}
+
+```
+
+### <p align=center> Aplicación del cliente Desktop </p>
+
+```js
+let socket;
+let lastTouchX = null; 
+let lastTouchY = null; 
+const threshold = 5;
+
+function setup() {
+    createCanvas(300, 400);
+    background(220);
+
+    // Conectar al servidor de Socket.IO
+    //let socketUrl = 'http://localhost:3000';
+    socket = io();
+
+    socket.on('connect', () => {
+        console.log('Connected to server');
+    });
+
+    socket.on('message', (data) => {
+        console.log(`Received message: ${data}`);
+    });
+
+    socket.on('disconnect', () => {
+        console.log('Disconnected from server');
+    });
+
+    socket.on('connect_error', (error) => {
+        console.error('Socket.IO error:', error);
+    });
+}
+
+function draw() {
+    background(220);
+    fill(255, 128, 0);
+    textAlign(CENTER, CENTER);
+    textSize(24);
+    text('Touch to move the circle', width / 2, height / 2);
+}
+
+function touchMoved() {
+    if (socket && socket.connected) { 
+        let dx = abs(mouseX - lastTouchX);
+        let dy = abs(mouseY - lastTouchY);
+
+        if (dx > threshold || dy > threshold || lastTouchX === null) {
+            let touchData = {
+                type: 'touch',
+                x: mouseX,
+                y: mouseY
+            };
+            socket.emit('message_desktop', JSON.stringify(touchData));
+
+            lastTouchX = mouseX;
+            lastTouchY = mouseY;
+        }
+    }
+    return false;
+}
+
+```

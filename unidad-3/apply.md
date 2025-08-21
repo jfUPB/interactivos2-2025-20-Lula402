@@ -1,7 +1,7 @@
 # Unidad 3
 
 
-## 🛠 Fase: Apply
+## 🛠 Fase: Apply.
 
 ### Video
 https://www.youtube.com/watch?v=IZbeOsBXb6g
@@ -452,3 +452,4 @@ function touchEnded(){
 
 }
 ```
+

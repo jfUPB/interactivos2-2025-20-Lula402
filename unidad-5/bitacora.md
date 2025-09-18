@@ -60,6 +60,16 @@ de este repositorio.
 <img width="262" height="262" alt="image" src="https://github.com/user-attachments/assets/cac2fc69-b2e3-42f6-bb0a-9cf30eb40397" />
 </p>
 
+<p align=center> 
+<img width="589" height="370" alt="image" src="https://github.com/user-attachments/assets/2bc198b9-1394-4993-a1a3-921e3f0f3523" />
+</p>
+
+<p align=center> 
+<img width="176" height="232" alt="image" src="https://github.com/user-attachments/assets/2e0205df-0416-4050-b299-bcdf360f2cce" />
+</p>
+
+### VIDEO: **https://youtu.be/OVCrT1FAMxQ**
+
 ### Evidencia 4: video demo del sistema funcionando
 
 [ESTE ES MI DEMO](https://youtu.be/your-video-link)
@@ -68,6 +78,7 @@ de este repositorio.
 ### Evidencia 5: interpretación en tiempo real
 
 [ ] Esta casilla la marcará el profesor cuando realices la interpretación en tiempo real.
+
 
 
 

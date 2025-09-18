@@ -51,6 +51,14 @@ Has utilizado la rúbrica para obtener tu **"Nota Base"**. Ahora, reflexiona hon
 [ ] Marca esta casilla con una "x" cuando hayas subido el código completo a la carpeta proyecto 
 de este repositorio.
 
+<p align=center> 
+<img width="542" height="173" alt="image" src="https://github.com/user-attachments/assets/7a160698-77af-4529-95cb-aba68d54e768" />
+</p>
+
+<p align=center> 
+<img width="262" height="262" alt="image" src="https://github.com/user-attachments/assets/cac2fc69-b2e3-42f6-bb0a-9cf30eb40397" />
+</p>
+
 ### Evidencia 4: video demo del sistema funcionando
 
 [ESTE ES MI DEMO](https://youtu.be/your-video-link)
@@ -59,6 +67,7 @@ de este repositorio.
 ### Evidencia 5: interpretación en tiempo real
 
 [ ] Esta casilla la marcará el profesor cuando realices la interpretación en tiempo real.
+
 
 
 

@@ -43,8 +43,9 @@ Has utilizado la rúbrica para obtener tu **"Nota Base"**. Ahora, reflexiona hon
 
 ## Evidencia 2: diseño de inputs de clientes
 
-> Escribe aquí. Inicia cada renglón con un "> "
->
+> **Input:** onda de sonido (Frecuencia): Se analiza la onda sonora en tiempo real para extraer las frecuencias bajas de la canción. Estas frecuencias marcan el beat de la canción.
+
+> **Canción de la que se extrae el input:** *https://youtu.be/e_AZJzYe7CU?feature=shared*
 
 ## Evidencia 3: código del proyecto
 
@@ -67,6 +68,7 @@ de este repositorio.
 ### Evidencia 5: interpretación en tiempo real
 
 [ ] Esta casilla la marcará el profesor cuando realices la interpretación en tiempo real.
+
 
 
 

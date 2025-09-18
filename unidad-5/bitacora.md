@@ -21,8 +21,24 @@ Has utilizado la rúbrica para obtener tu **"Nota Base"**. Ahora, reflexiona hon
 
 ## Evidencia 1: concepto de visuales en vivo
 
-> Escribe aquí. Inicia cada renglón con un "> "
->
+> ## CHIHIRO 
+> ## Título del Proyecto: I dont know you at all 
+> **Canción seleccionada:** Chihiro – by Billie Eilish - https://youtu.be/e_AZJzYe7CU?feature=shared
+
+> **Concepto Raíz:** una exploración visual de la memoria, la pérdida y la autotransformación a través de un paisaje reactivo. La experiencia representa un viaje a través de un espacio que se transforma, reflejando la naturaleza efímera de las relaciones y la búsqueda de la propia identidad. 
+
+ 
+> ## Fase estrofa: 0:00 – 0:35: Distance Waterfall 
+> **Emoción Buscada:** Melancolía, incertidumbre, y la sensación de un flujo constante e incontrolable, como el tiempo o la distancia emocional que crece entre dos personas. 
+
+ 
+> **Input:** onda de sonido (Frecuencia): Se analiza la onda sonora en tiempo real para extraer las frecuencias bajas de la canción. Estas frecuencias marcan el beat de la canción. 
+
+ 
+> **Process:** Se agarra la onda sonora, se divide en frecuencias, se toma la frecuencia baja que es la que se desea. Despues se le entrega al operator SOP de noise y se le asigna al parámetro de amplitud de noise. El noise se encarga del movimiento de la cascada.  
+
+ 
+> **Output:** Se ve una cascada azul brillante, esta cobra vida una vez los beats de la canción empiecen a sonar. El ritmo de la canción se ve reflejado en el movimiento del agua de la cascada, como si fuera agua en movimiento. 
 
 
 ## Evidencia 2: diseño de inputs de clientes
@@ -43,5 +59,6 @@ de este repositorio.
 ### Evidencia 5: interpretación en tiempo real
 
 [ ] Esta casilla la marcará el profesor cuando realices la interpretación en tiempo real.
+
 
 

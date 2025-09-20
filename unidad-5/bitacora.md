@@ -21,19 +21,54 @@ Has utilizado la rúbrica para obtener tu **"Nota Base"**. Ahora, reflexiona hon
 
 ## Evidencia 1: concepto de visuales en vivo
 
-> Escribe aquí. Inicia cada renglón con un "> "
->
+> ## CHIHIRO 
+> ## Título del Proyecto: I dont know you at all 
+> **Canción seleccionada:** Chihiro – by Billie Eilish - https://youtu.be/e_AZJzYe7CU?feature=shared
+
+> **Concepto Raíz:** una exploración visual de la memoria, la pérdida y la autotransformación a través de un paisaje reactivo. La experiencia representa un viaje a través de un espacio que se transforma, reflejando la naturaleza efímera de las relaciones y la búsqueda de la propia identidad. 
+
+ 
+> ## Fase estrofa: 0:00 – 0:35: Distance Waterfall 
+> **Emoción Buscada:** Melancolía, incertidumbre, y la sensación de un flujo constante e incontrolable, como el tiempo o la distancia emocional que crece entre dos personas. 
+
+ 
+> **Input:** onda de sonido (Frecuencia): Se analiza la onda sonora en tiempo real para extraer las frecuencias bajas de la canción. Estas frecuencias marcan el beat de la canción. 
+
+ 
+> **Process:** Se agarra la onda sonora, se divide en frecuencias, se toma la frecuencia baja que es la que se desea. Despues se le entrega al operator SOP de noise y se le asigna al parámetro de amplitud de noise. El noise se encarga del movimiento de la cascada.  
+
+ 
+> **Output:** Se ve una cascada azul brillante, esta cobra vida una vez los beats de la canción empiecen a sonar. El ritmo de la canción se ve reflejado en el movimiento del agua de la cascada, como si fuera agua en movimiento. 
 
 
 ## Evidencia 2: diseño de inputs de clientes
 
-> Escribe aquí. Inicia cada renglón con un "> "
->
+> **Input:** onda de sonido (Frecuencia): Se analiza la onda sonora en tiempo real para extraer las frecuencias bajas de la canción. Estas frecuencias marcan el beat de la canción.
+
+> **Canción de la que se extrae el input:** *https://youtu.be/e_AZJzYe7CU?feature=shared*
 
 ## Evidencia 3: código del proyecto
 
 [ ] Marca esta casilla con una "x" cuando hayas subido el código completo a la carpeta proyecto 
 de este repositorio.
+
+<p align=center> 
+<img width="542" height="173" alt="image" src="https://github.com/user-attachments/assets/7a160698-77af-4529-95cb-aba68d54e768" />
+</p>
+
+<p align=center> 
+<img width="262" height="262" alt="image" src="https://github.com/user-attachments/assets/cac2fc69-b2e3-42f6-bb0a-9cf30eb40397" />
+</p>
+
+<p align=center> 
+<img width="589" height="370" alt="image" src="https://github.com/user-attachments/assets/2bc198b9-1394-4993-a1a3-921e3f0f3523" />
+</p>
+
+<p align=center> 
+<img width="176" height="232" alt="image" src="https://github.com/user-attachments/assets/2e0205df-0416-4050-b299-bcdf360f2cce" />
+</p>
+
+### VIDEO: **https://youtu.be/OVCrT1FAMxQ**
 
 ### Evidencia 4: video demo del sistema funcionando
 
@@ -43,5 +78,9 @@ de este repositorio.
 ### Evidencia 5: interpretación en tiempo real
 
 [ ] Esta casilla la marcará el profesor cuando realices la interpretación en tiempo real.
+
+
+
+
 
 
